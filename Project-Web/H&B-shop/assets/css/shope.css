@@ -1,0 +1,15 @@
+.shop__banner {
+  background-image: url(../graphics/Shop-page/shop-Banner.png);
+}
+
+.shope img {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.product__rating {
+  padding-block: 0.5rem;
+}
+.xd_subtitle {
+  font-family: 'Roboto', sans-serif;
+}

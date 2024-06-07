@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/graphics/favicon/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/graphics/favicon//logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/graphics/favicon//logo.png" />
+    <!--Font-awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--Main Css-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/checkout.css" />
+    <title>Thanh Toán</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="checkout__main wrp">
+            <div class="checkout__form">
+                <h3>Thông tin thanh toán</h3>
+                <p>Vui lòng nhập thông tin thanh toán của bạn</p>
+                <!-- checkout FORM -->
+                <div class="contact">
+                    <form id="contact-form">
+                        <p>
+                            <label>Tên</label>
+                            <input type="text" name="name" id="name" required placeholder="Oanh">
+                        </p>
+
+                        <p>
+                            <label>Họ</label>
+                            <input type="text" name="name" id="name" required placeholder="Nguyễn">
+                        </p>
+
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email" id="email" required placeholder="example@yourmail.com">
+                        </p>
+                        <p>
+                            <label>Số điên thoại</label>
+                            <input type="number" name="company" id="phone" placeholder="+123 456 789">
+                        </p>
+                        <p>
+                            <label>Địa chỉ</label>
+                            <input type="text" name="company" id="company" placeholder="Địa chỉ">
+                        </p>
+
+                        <p>
+                            <label>Thành phố</label>
+                            <select name="country">
+                                <option value="HN">Hà Nội</option>
+                                <option value="HCM">Hồ Chí Minh</option>
+                                <option value="DN">Đà Nẵng</option>
+                                <!-- Add more countries here -->
+                            </select>
+                        </p>
+
+
+
+                        <p>
+                            <label>ZIP</label>
+                            <input type="number" name="company" id="company" placeholder="Mã ZIP">
+                        </p>
+
+
+
+                        <!-- button
+                        <p class="full">
+                            <button type="submit" class="btn-secondary xd__btn">Complete order
+                                <img src="./assets/graphics/hero/btn-arrow-icon.png" alt="">
+                            </button>
+                        </p>
+
+                    </form> -->
+                        <!-- End #contact-form -->
+                </div>
+                <!-- End .contact -->
+
+
+                <div class="checkout__biling-method">
+                    <h3>Phương thức thanh toán</h3>
+                    <p>Vui lòng nhập phương thức thanh toán của bạn</p>
+                    <div class="checkout__billing">
+
+
+                        <p class="checkout__label">
+
+                            <input type="checkbox" name="company" id="company" placeholder="yourcompany name here">
+                            <label>Momo</label>
+                            <span>
+                                <strong>+775.000 VNĐ</strong>
+                                Số tiền trả thêm</span>
+                            <img src="./assets/graphics/checkout-page/momo.png" alt="">
+                        </p>
+
+
+                        <p class="checkout__label">
+
+                            <input type="checkbox" name="company" id="company" placeholder="yourcompany name here">
+                            <label>Visa</label>
+                            <span>
+                                <strong>+364.000 VNĐ</strong>
+                                Số tiền trả thêm</span>
+                            <img src="./assets/graphics/checkout-page/visa.webp" alt="">
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="order__summary">
+                <h3>Tổng kết đơn hàng</h3>
+                <p>Giá có thể thay đổi tùy thuộc vào phương thức vận chuyển và thuế của nơi ở của bạn.</p>
+                <!--1-->
+                <div class="checkout__single__product">
+                    <img src="./assets/graphics/Shop/khoai-lang-mat-remove.png" alt="">
+
+                    <div class="cart__info">
+                        <p class="product__name">Khoai lang mật</p> <!--Nust-->
+                        <div class=" product__rating single">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="product__price-single">
+                            <p class="product__discount">484.000 VNĐ</p>
+                            <p class="product__price">315.000 VNĐ</p>
+                        </div>
+
+
+                        <div class="product__detail">
+                            <p>Số lượng :</p>
+                            <span class="qty__btn">
+                                <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                                <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                                <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                            </span>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!--2-->
+                <div class="checkout__single__product">
+                    <img src="./assets/graphics/Shop/kiwi-remove.png" alt="">
+
+                    <div class="cart__info">
+                        <p class="product__name">Kiwi vàng</p>
+                        <div class=" product__rating single">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="product__price-single">
+                            <p class="product__discount">484.000 VNĐ</p>
+                            <p class="product__price">315.000 VNĐ</p>
+                        </div>
+
+
+                        <div class="product__detail">
+                            <p>Số lượng :</p>
+                            <span class="qty__btn">
+                                <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                                <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                                <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                            </span>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="checkout__total">
+                    <table>
+                        <!-- <tr>
+                          <th>Item</th>
+                          <th>Price</th>
+                        </tr> -->
+                        <tr>
+                            <td>Tạm tính</td>
+                            <td>2.422.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td>Thuế</td>
+                            <td>242.000</td>
+                        </tr>
+                        <tr>
+                            <td>Phí Ship</td>
+                            <td>121.000</td>
+                        </tr>
+                        <span class=" promo-code">
+
+                            <label for="propmo"></label>
+                            <input type="text" id="promo" placeholder="Mã giảm giá">
+
+                            <a href="">Đặt ngay</a>
+                        </span>
+                        <tr>
+                            <td><strong>Tổng đơn hàng</strong></td>
+                            <td><strong>2.785.000 VNĐ</strong></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="./assets/js/script.js"></script>
+<div id="footer"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () {
+        $("#header").load("/partials/header.html");
+        $("#footer").load("/partials/footer.html");
+    });
+</script>
+</body>
+
+</html>

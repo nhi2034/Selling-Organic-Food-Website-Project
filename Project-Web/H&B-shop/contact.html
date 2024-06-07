@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--ICON-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/graphics/favicon/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/graphics/favicon//logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/graphics/favicon//logo.png" />
+  <!--Font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!--Main Css-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/contact.css" />
+  <title> Liên Hệ</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="page__banner contact__banner">
+    <h2>Liên Hệ</h2>
+  </div>
+  <main class="wrp">
+    <div class="contact__grid">
+      <div class="contact__left">
+        <h2>Trang trại của chúng tôi</h2>
+        <p>
+          Ngoài các trang trại của những người nông dân, chúng tôi cũng có trang trại riêng và được chăm sóc một cách
+          nghiêm ngặt cho ra những sản phẩm chất lượng nhất
+        </p>
+        <div class="contact__location">
+          <span class="flx">
+            <img src="/assets/graphics/contact-page/locqation-Icon.png" alt="" />
+            <p>
+              <strong>Thủ Đức, Hồ Chí Minh:</strong>
+              <br />
+              Khu Phố 6, Linh Trung, Thủ Đức,
+              <br />
+              Hồ Chí Minh 10171
+            </p>
+          </span>
+          <span class="flx">
+            <img src="/assets/graphics/contact-page/locqation-Icon.png" alt="" />
+            <p>
+              <strong>Tây Hồ, Hà Nội:</strong>
+              <br />
+              614 đường Lạc Long Quân,
+              <br />
+              Hà Nội SE1 9LQ
+            </p>
+          </span>
+        </div>
+      </div>
+      <div class="contact__right">
+        <div class="contact__title">
+          <h2>Kết nối</h2>
+          <p>
+            Nếu bạn có nông trại và muốn hợp tác với chúng tôi để tạo ra các sản phẩm nông nghiệp hữu cơ hãy liên lạc
+            với chúng tôi
+          </p>
+        </div>
+        <div class="contact__detail">
+          <span>
+            <img src="/assets/graphics/contact-page/contact-icon.svg" alt="" />
+            <p>
+              <strong>Email</strong>
+              <br />
+              support@HB.com
+            </p>
+          </span>
+          <span>
+            <img src="/assets/graphics/contact-page/call-icon.svg" alt="" />
+            <p>
+              <strong>Liên hệ chúng tôi</strong>
+              <br />
+              +01 123 456 789
+            </p>
+          </span>
+        </div>
+        <div class="footer__soical contact__social">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-pinterest" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <!--FORM LIÊN HỆ-->
+    <section>
+      <!--FORM LIÊN HỆ-->
+      <div class="contact">
+
+        <form id="contact-form">
+
+          <p>
+            <label>Họ và tên</label>
+            <input type="text" name="name" id="name" required placeholder="Oanh">
+          </p>
+
+          <p>
+            <label>Email</label>
+            <input type="email" name="email" id="email" required placeholder="example@yourmail.com">
+          </p>
+
+          <p>
+            <label>Công Ty</label>
+            <input type="text" name="company" id="company" placeholder="Tên công ty của bạn">
+          </p>
+
+          <p>
+            <label>Tiêu đề</label>
+            <input type="text" name="Subject" id="Subject" placeholder="Chúng tôi có thể giúp gì cho bạn">
+          </p>
+
+          <p class="full">
+            <label>Nội dung</label>
+            <textarea name="message" rows="5" id="message" placeholder="Xin chào H&B, chúng tôi muốn..."></textarea>
+          </p>
+
+          <p class="full">
+            <button type="submit" class="btn-secondary xd__btn">Gửi
+              <img src="./assets/graphics/hero/btn-arrow-icon.png" alt="">
+            </button>
+          </p>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <div id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("/partials/header.html");
+      $("#footer").load("/partials/footer.html");
+    });
+  </script>
+</body>
+
+</html>
