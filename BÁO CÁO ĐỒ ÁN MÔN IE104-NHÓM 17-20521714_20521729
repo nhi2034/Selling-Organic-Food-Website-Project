@@ -1,0 +1,254 @@
+ĐẠI HỌC QUỐC GIA TP. HỒ CHÍ MINH
+TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN
+bdôca
+WEBSITE BÁN THỰC PHẨM HỮU CƠ
+Sinh viên thực hiện:
+STT Họ tên MSSV Ngành học
+1 Nguyễn Phan Uyển Nhi 20521714 CNTT
+2 Nguyễn Triệu Kim Oanh 20521729 CNTT
+TP. HỒ CHÍ MINH – 11/2023
+MỤC LỤC
+1. GIỚI THIỆU ............................................................................................................. 1
+2. PHÂN TÍCH THIẾT KẾ ......................................................................................... 1
+2.1. Yêu cầu của đề tài .............................................................................................. 1
+2.2. Quá trình thiết kế giao diện ............................................................................... 2
+2.2.1. Sơ đồ cấu trúc trang (site map) ............................................................... 2
+2.2.2. Wireframe ............................................................................................... 2
+2.2.3. Các nội dung xây dựng ........................................................................... 3
+3. TRIỂN KHAI ............................................................................................................ 4
+3.1. Quá trình lập trình và triển khai trang web front-end ........................................ 4
+3.1.1. Quá trình lập trình ................................................................................... 4
+3.1.2. Triển khai web front-end ........................................................................ 5
+3.2. Công cụ hỗ trợ: .................................................................................................. 5
+3.2.1. Figma: ..................................................................................................... 5
+3.2.2. GitHub: ................................................................................................... 6
+3.2.3. Font Awesome: ....................................................................................... 6
+3.2.4. Github Compilot ..................................................................................... 6
+3.3. Thư viện ............................................................................................................. 6
+3.3.1. jQuery ..................................................................................................... 6
+4. KẾT LUẬN ................................................................................................................ 7
+MỤC LỤC HÌNH ẢNH
+Hình 2.1. Bộ màu chính của trang web .......................................................................... 1
+Hình 2.2. Site map .......................................................................................................... 2
+Hình 2.3. Wireframe ....................................................................................................... 2
+Hình 2.4.Kiến trúc của website ....................................................................................... 4
+Hình 2.5. Tham khảo giao diện ở Figma ........................................................................ 5
+Hình 2.6. Giao diện GitHub quản lý source code project của nhóm .............................. 6
+LỜI CẢM ƠN
+Em xin gửi lời cảm ơn chân thành nhất đến thầy Phạm Thế Sơn về sự hướng dẫn
+và hỗ trợ của Thầy trong quá trình thực hiện báo cáo môn Internet và Công nghệ Web.
+Qua môn học này, em đã có cơ hội học hỏi và áp dụng nhiều kiến thức mới về
+internet và công nghệ web. Những bài giảng, bài thực hành và dự án đã giúp em hiểu rõ
+hơn về cách thức hoạt động của internet, cũng như sự quan trọng của công nghệ web
+trong thế giới hiện đại.
+Em đánh giá cao sự tận tâm và kiến thức sâu rộng của Thầy, giúp đỡ chúng em
+vượt qua những thách thức trong quá trình nắm bắt kiến thức khó khăn. Thêm vào đó,
+những phản hồi và góp ý của Thầy đã giúp em hiểu rõ hơn về những điểm cần cải thiện
+và phát triển.
+Em tin rằng những kiến thức và kỹ năng em đã học được từ môn học này sẽ có tác
+động tích cực đối với sự phát triển nghề nghiệp và sự hiểu biết của em về lĩnh vực này.
+Em sẽ tiếp tục nỗ lực học tập và áp dụng những kiến thức này vào tương lai.
+Một lần nữa, em xin chân thành cảm ơn sự hỗ trợ và dành thời gian quý báu của Thầy
+trong suốt học kỳ.
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh Trang 1
+1.GIỚI THIỆU
+- Đề tài của chúng tôi là tìm hiểu và xây dựng website bán các sản phẩm hữu cơ.
+Để xây dựng được website này thì chúng tôi đã sử dụng một số thư viện hỗ trợ bao
+gồm Font Awesome. Ngôn ngữ lập trình chính để xây dựng nên trang web là HTML,
+CSS và JavaScripts. Trong quá trình thực hiện project thì có tham khảo giao diện ở
+Figma và nhóm chúng tôi giao tiếp, quản lí source code thông qua GitHub. Sau quá trình
+thực hiện thì chúng tôi đã hoàn thành website bán hàng bao gồm các chức năng như cho
+phép người dùng xem các thông tin của cửa hàng bao gồm giới thiệu, dịch vụ, quảng
+cáo, ngoài ra có thể xem danh mục sản phẩm của cửa hàng, giỏ hàng và trang thanh
+toán, cung cấp thông tin giáo dục về ưu điểm của thực phẩm hữu cơ, giỏ hàng và thanh
+toán. Website được thiết kế với bố cục gọn gàng dễ nhìn, dễ sử dụng, thân thiện với
+người dùng. Đề tài được tham khảo tại Figma [1].
+2.PHÂN TÍCH THIẾT KẾ
+2.1. Yêu cầu của đề tài
+- Website bán thực phẩm của chúng sử dụng 3 mã màu chính là #44B0A0,
+#7eb693, #235c54, font chữ được sử dụng là Roboto.
+Hình 2.1. Bộ màu chính của trang web
+- Các yếu tố thiết kế khác:
++ Tương thích với Thiết bị: Thiết kế tương thích với nhiều loại thiết bị, từ máy
+tính đến điện thoại di động và máy tính bảng.
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh Trang 2
++ Tốc độ tải trang: Sử dụng thư viện jQuery cung cấp các phương thức Ajax,
+sử dụng Ajax để tải header và footer có thể giúp trang web load bất đồng bộ,
+điều này có thể làm tăng tốc độ load trang.
++ Màu sắc và thiết kế hình ảnh: Màu sắc phù hợp với thương hiệu của cửa hàng,
+hình ảnh phù hợp
++ Cấu trúc và bố cục: Sắp xếp nội dung một cách logic và hợp lý, sử dụng lưới
+(grid) và các yếu tố bố cục để tạo cấu trúc rõ ràng.
+2.2. Quá trình thiết kế giao diện
+2.2.1. Sơ đồ cấu trúc trang (site map)
+Hình 2.2. Site map
+2.2.2. Wireframe
+- Thiết kế giao diện với Figma và tạo wireframe trên Diagram.
+Hình 2.3. Wireframe
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh Trang 3
+2.2.3. Các nội dung xây dựng
+Các nội dung xây dựng bao gồm header, content, footer của từng trang như Trang
+chủ, Giới thiệu, Bán hàng, Sản phẩm, Liên hệ, Bài viết, Thanh Toán.
+Trong content chia ra nhiều section cho từng chủ đề. Ví dụ như trong trang Giới
+thiệu, có các chủ đề chính bao gồm Thông tin cửa hàng, Quảng cáo cửa hàng và sản
+phẩm, Dịch vụ. Mỗi chủ đề sẽ được nằm trong một section.
+- Chi tiết nội dung:
++ Header: Tiêu đề trang web, menu điều hướng, tìm kiếm, giỏ hàng – có đường
+dẫn đến trang Thanh toán.
++ Footer: Thông tin liên hệ, Trang tiện ích, Phương châm của cửa hàng
++ Content Trang Chủ:
+• Banner quảng cáo
+• Thông tin, lịch sử cửa hàng – Có đường dẫn tới trang Giới thiệu
+• Danh mục sản phẩm – Có đường dẫn tới trang Cửa hàng
+• Đề xuất bài viết – Có đường dẫn tới trang Bài viết
++ Content Giới Thiệu:
+• Giới thiệu công nghệ, sản phẩm cửa hàng
+• Quảng cáo cửa hàng và sản phẩm
+• Mô tả các dịch vụ đặc biệt hoặc chính sách của cửa hàng.
++ Content Cửa hàng: Danh sách sản phẩm, bảng giá, giảm giá, đánh giá sản
+phẩm.
++ Content Sản phẩm: Danh sách các danh mục sản phẩm, bảng giá, giảm giá,
+đánh giá sản phẩm, thông tin chi tiết sản phẩm, sản phẩm liên quan
++ Content Liên Hệ: Form liên hệ, thông tin liên hệ, vị trí địa lý.
++ Content Bài Viết: Danh sách bài viết.
++ Content Thanh Toán: Thông tin thanh toán, Phương thức thanh toán, Tổng
+kết đơn hàng
+- Thiết kế kiến trúc
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh Trang 4
+Hình 2.4.Kiến trúc của website
+- Chức năng của website:
++ Hiển thị danh sách sản phẩm, nhấn nút xem thêm để xem thêm sản phẩm
+và có thể xem mô tả chi tiết sản phẩm
++ Tăng giảm số lượng sản phẩm ở trang Sản phẩm, Thanh Toán
++ Trang đặc biệt như trang Giới thiệu, Liên hệ, Bài viết: Cung cấp các trang
+đặc biệt chứa thông tin chi tiết về công ty, liên hệ, góp ý hay xem các bài
+viết bổ ích.
+3.TRIỂN KHAI
+3.1. Quá trình lập trình và triển khai trang web front-end
+3.1.1. Quá trình lập trình
+Thời gian Công việc Đánh giá
+Tuần 1 Header, footer, tạo logo Hoàn thành
+Tuần 2 Components Hoàn thành
+Tuần 3 Content (trang chủ, giới thiệu, cửa
+hàng, sản phẩm, liên hệ, bài viết)
+Hoàn thành
+Tuần 4 Viết javasript, responsive Hoàn thành
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh Trang 5
+3.1.2. Triển khai web front-end
+Đầu tiên tham khảo giao diện, hình site map và vẽ wireframe cho trang web. Sau đó,
+github page để triển khai dự án.
+3.2. Công cụ hỗ trợ:
+3.2.1. Figma:
+Figma là một công cụ thiết kế đồ họa và tạo giao diện người dùng (UI) trực tuyến,
+được phát triển bởi Figma, Inc. Nó được giới thiệu vào năm 2016 và nhanh chóng trở
+thành một trong những công cụ thiết kế phổ biến nhất trong ngành công nghiệp thiết kế
+và phát triển phần mềm với những đặc điểm nổi bật là [2]:
+- Hỗ trợ trên Đa nền tảng bất kỳ trình duyệt web, hệ điều hành nào cũng có thể sử
+dụng Figma.
+- Figma có thể làm việc đồng thời giữa nhiều người dùng.
+- Người dùng có thể chia sẻ các bản xem trực tuyến của thiết kế mà không cần phải
+chuyển file.
+- Figma hỗ trợ việc tạo và quản lý thư viện các thành phần và biểu tượng, giúp đảm
+bảo sự đồng nhất trong thiết kế và giảm thời gian làm việc.
+- Figma được xây dựng với hiệu suất cao, cho phép xử lý các dự án lớn mà không
+gặp vấn đề về tốc độ hoặc khả năng đáp ứng.
+Hình 2.5. Tham khảo giao diện ở Figma
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh Trang 6
+3.2.2. GitHub:
+GitHub là nền tảng được xem như một mạng xã hội dành cho các lập trình viên
+và đồng thời là một kho lưu trữ chất lượng cho mã nguồn. Với đầy đủ các tính năng của
+Git, GitHub cung cấp thêm các tính năng xã hội giúp lập trình viên tương tác một cách
+hiệu quả và toàn diện. Quyết định sử dụng GitHub để quản lý và đồng bộ mã nguồn của
+dự án được đưa ra bởi sự tiện lợi và tốc độ mà nó mang lại. Nhờ có GitHub, quá trình
+triển khai dự án trở nên hiệu quả và mượt mà hơn[3].
+Hình 2.6. Giao diện GitHub quản lý source code project của nhóm
+3.2.3. Font Awesome:
+Là một bộ công cụ dùng để chèn font và các icon vào website của bạn. Lý do
+chúng tôi quyết định sử dụng Font Awesome là vì sự nhanh chóng và tiện lợi của nó.
+Đợi website load hình ảnh thì rất mất thời gian. Đối với Font Awesome thì chỉ cần load
+file CSS nên tốc độ sẽ được cải thiện đáng kể, hơn nữa còn có thể dễ dàng điều chỉnh
+màu sắc, kích thước của icon, cực kì linh hoạt.
+3.2.4. Github Compilot
+- Là một extensions của VSCode hỗ trợ việc lập trình bằng AI.
+3.3. Thư viện
+3.3.1. jQuery
+Là một thư viện JavaScript giúp đơn giản hóa việc viết mã JavaScript và tương tác
+với trang web. Nó cung cấp một tập hợp các chức năng và phương thức giúp thao tác
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh Trang 7
+với DOM (Document Object Model), thực hiện các hiệu ứng, và thực hiện các yêu cầu
+Ajax [4].
+Sản phẩm đồ án môn học:
+File word và pdf báo cáo, ko in ra, nộp file mềm.
+Code Demo kết quả.
+Slide thuyết trình.
+Video giới thiệu sản phẩm (Nếu có, không bắt buộc)
+Yêu cầu:
+Nộp đúng hạn theo deadline. Thành viên đầu tiên danh sách nhóm sẽ phụ trách nộp bài.
+Nếu demo sản phẩm web dung lượng lớn thì upload lên Google Drive rồi chia sẽ link
+theo chế độ bất cứ ai truy cập khi có link. Các sản phầm còn lại nộp trực tiếp trên hệ
+thống.
+4. KẾT LUẬN
+Chúng tôi đã xây dựng một trang web bán hàng có thể hiển thị các thông tin cơ
+bản của cửa hàng, có những trang như giới thiệu, cửa hàng, sản phẩm, liên hệ, bài viết
+và trang thanh toán. Trang web này chỉ là trang web tĩnh, không có nhiều javascript nên
+không có tương tác giữa các element, thông tin chưa đồng nhất (ví dụ như không thể
+thêm sản phẩm vào giỏ hàng, sản phẩm trong giỏ hàng và số lượng trong giỏ hàng là
+được set cứng, điều đó cũng tương tự trong trang thanh toán), sử dụng font mặc định
+nên còn cứng nhắc. Ngoài ra, trang web này sử dụng thư viện jQuery nên trang được tải
+một cách nhanh chóng, giao diện được thiết kế phù hợp với chủ đề cửa hàng, bố cục dễ
+nhìn, web tương thích với nhiều thiết bị.
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+TÀI LIỆU THAM KHẢO
+[1] VictorFlow, Agriculture Webflow Website Template. Link:
+https://www.figma.com/file/Lx36PAXXOUtAY8UZRubyLQ/Agriculture-Webflow-
+Website-Template-(Community)?type=design&nodeid=
+2%3A12526&mode=design&t=6m7mHRdTMfDTppFn-
+1&fbclid=IwAR3NkdMiUF2JR95XTw6xW9-
+YSRX0MSAQKmPEOwZaR2Ux79kAtoyCIcho8GA (Ngày truy cập 5/11/2023)
+[2] Phan Đõ Hoàng Nhật, Figma là gì? Những điểm vượt trội của công cụ thiết kế giao
+diện. Link: https://mona.media/figma-la-gi/ (Ngày truy cập 1/12/2023)
+[3] Khánh Kim, Github là gì? Các thuật Github mà bạn không thể bỏ qua. Link:
+https://teky.edu.vn/blog/github-la-gi/ (Ngày truy cập 1/12/2023)
+[4] Bui Thi Huyen, JQuery Ajax và kiến thức cơ bản. Link: https://viblo.asia/p/jqueryajax-
+va-kien-thuc-co-ban-4dbZNxny5YM (Ngày truy cập 18/11/2023)
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+PHỤ LỤC PHÂN CÔNG NHIỆM VỤ
+STT Thành viên Nhiệm vụ
+1 Nguyễn Phan Uyển Nhi Tìm kiếm thông tin, Shop-Single, index,shope,
+footer, checkout, viết báo cáo + slide.
+2 Nguyễn Triệu Kim Oanh Tìm kiếm thông tin , About, blog, contact,
+header, node.js, viết báo cáo.
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+PHỤ LỤC HÌNH
+1. Giao diện Trang chủ
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+2. Giao diện Giới thiệu
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+3. Giao diện Cửa hàng
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+4. Giao diện Sản phẩm
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+5. Giao diện Liên hệ
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+6. Giao diện Bài viết
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+7. Giao diện Thanh toán
+Đồ án môn học Internet và Công nghệ Web - IE104
+Nguyễn Phan Uyển Nhi – Nguyễn Triệu Kim Oanh
+8. Giao diện giỏ hàng
